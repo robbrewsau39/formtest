@@ -15,7 +15,25 @@
 
     <body>
         <h1>Please submit a response on the form below.</h1>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKX9Nf19BUHqRbBxVsMkv1BoXkoRLAfpB38lyn5-gFTCUH3w/viewform?embedded=true" width="640" height="372" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKX9Nf19BUHqRbBxVsMkv1BoXkoRLAfpB38lyn5-gFTCUH3w/viewform?embedded=true" width="640" height="372" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
     </body>
+
+    <div id="commentSection">
+        <h2>Comments</h2>
+        <textarea id="commentInput" placeholder="Write a comment..."></textarea>
+        <button onclick="addComment()">Submit</button>
+        <ul id="commentList"></ul>
+    </div>
+    
+    <script>
+        function addComment() {
+            var commentInput = document.getElementById('commentInput');
+            var commentList = document.getElementById('commentList');
+            var newComment = document.createElement('li');
+            newComment.textContent = commentInput.value;
+            commentList.appendChild(newComment);
+            commentInput.value = '';
+        }
+    </script>
 
 </html>
