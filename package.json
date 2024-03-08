@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "firebase": "^10.8.1"
+  },
+  "name": "formtest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "description": "Testing on database",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robbrewsau39/formtest2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robbrewsau39/formtest2/issues"
+  },
+  "homepage": "https://github.com/robbrewsau39/formtest2#readme"
+}
